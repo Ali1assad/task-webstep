@@ -1,0 +1,91 @@
+.card{
+	width: 100px;
+	height: 100px;
+	margin: 20px ;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: all 2s ease-in-out;
+}
+.card .back a{
+	position: relative;
+	top: 35px;
+}
+.card > div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	background-color: rgb(44, 43, 43);
+	color: #777;
+	border-radius: 10px;
+	border: 1px solid #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+.card .front{
+	z-index: 2;
+	backface-visibility: hidden;
+}
+.card .front span{
+	font-size: 125%;
+	color: white;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+	border-radius: 50%;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-quora {
+  background: #9d2d11;
+  color: white;
+}
+.fa-spotify {
+  background: #048a2a;
+  color: black;
+}
+.fa-dropbox {
+  background: #2416f5;
+  color: white;
+}
+.fa-reddit {
+  background: orangered;
+  color: white;
+}
+body{
+	perspective: 1000px;
+}
+
+.card .front p {
+	margin: 0 auto;
+	width: 90%;
+	line-height: 1.7;
+}
+
+.card:hover{
+	transform: rotateY(180deg);
+}
+.card .back{
+	z-index: 1;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+.card .back ul{
+	padding: 0;
+	list-style: none;
+	line-height: 2;
+}
+.col-3 {
+	margin-left: 40px;
+}
